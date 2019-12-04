@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • farsdata</title>
+<title>Person-level counts of Fatal Automobile Accidents in the United States, 2004-2018, by sex and race of victim — persons • farsdata</title>
 
 
 <!-- jquery -->
@@ -35,7 +35,9 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Person-level counts of Fatal Automobile Accidents in the United States, 2004-2018, by sex and race of victim — persons" />
+<meta property="og:description" content="A tibble containing selected person-level characteristics of automobile crashes that resulted in at least one fatality, 2004-2018" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -54,7 +56,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -101,54 +103,42 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Person-level counts of Fatal Automobile Accidents in the United States, 2004-2018, by sex and race of victim</h1>
+    <small class="dont-index">Source: <a href='https://github.com/kjhealy/farsdata/blob/master/R/data.R'><code>R/data.R</code></a></small>
+    <div class="hidden name"><code>persons.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>A tibble containing selected person-level characteristics of automobile crashes that resulted in at least one fatality, 2004-2018</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='no'>persons</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-datasets" class="hasAnchor"><a href="#section-datasets" class="anchor"></a>Datasets</h2>
-          <p class="section-desc"><p>Included datasets.</p></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="agetimes.html">agetimes</a></code> </p>
-        </td>
-        <td><p>Counts of Fatal Automobile Accidents in the United States, 2004-2018 by Age of victim and time of day of accident</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="persons.html">persons</a></code> </p>
-        </td>
-        <td><p>Person-level counts of Fatal Automobile Accidents in the United States, 2004-2018, by sex and race of victim</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="vehicles.html">vehicles</a></code> </p>
-        </td>
-        <td><p>Vehicle-Level Counts of Fatal Automobile Accidents in the United States, 2004-2018</p></td>
-      </tr>
-    </tbody>
-    </table>
+
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>A tibble with 405 rows and 4 columns</p>
+<dl class='dl-horizontal'>
+<dt><code>sex</code></dt><dd><p>Sex of victim</p></dd>
+<dt><code>race</code></dt><dd><p>Race/ethcnicity of victim</p></dd>
+<dt><code>year</code></dt><dd><p>Year</p></dd>
+<dt><code>n</code></dt><dd><p>Count</p></dd>
+
+</dl>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>Fatality Analysis Reporting System (FARS): 2004-2017 Final File and 2018 Annual Report File (ARF)</p>
+
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-datasets">Datasets</a></li>
+      <li><a href="#format">Format</a></li>
+      <li><a href="#source">Source</a></li>
     </ul>
+
   </div>
 </div>
 
