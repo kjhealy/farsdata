@@ -3,11 +3,11 @@
 library(tidyverse)
 library(here)
 
-filenames <- dir(path = c(here(), "data-raw/fars_raw"),
+filenames <- dir(path = c(here(), "data-raw/fars_raw/vehicles"),
                  pattern = "*.csv",
                  full.names = TRUE)
 
-involving <-  dir(path = c(here(), "data-raw/fars_raw"),
+involving <-  dir(path = c(here(), "data-raw/fars_raw/vehicles"),
                  pattern = "*.csv",
                  full.names = FALSE)
 involving <- stringr::str_remove(involving, "\\.csv")
@@ -33,6 +33,31 @@ clean_table <- function(filename, measure){
 
 }
 
-crashes <- map2_df(filenames, involving, clean_table)
+vehicles <- map2_df(filenames, involving, clean_table)
 
-usethis::use_data(crashes, overwrite = TRUE)
+usethis::use_data(vehicles, overwrite = TRUE)
+
+persons <- read_csv("data-raw/fars_raw/persons/gender_race.csv", skip = 1) %>%
+  select(-Total) %>%
+  fill(X1) %>%
+  filter(X1 %nin% "Total", X2 %nin% "Total") %>%
+  pivot_longer(cols = `2004`:`2018`, names_to = "year", values_to = "n") %>%
+  rename(sex = X1, race = X2) %>%
+  group_by(year, sex, race) %>%
+  arrange(year) %>%
+  ungroup()
+
+usethis::use_data(persons, overwrite = TRUE)
+
+agetimes <- read_csv("data-raw/fars_raw/times/age_times.csv", skip = 1) %>%
+  select(-Total) %>%
+  fill(X1) %>%
+  filter(X1 %nin% "Total", X2 %nin% "Total") %>%
+  pivot_longer(cols = `2004`:`2018`, names_to = "year", values_to = "n") %>%
+  rename(age = X1,
+         time = X2) %>%
+  group_by(year, age, time) %>%
+  arrange(year) %>%
+  ungroup()
+
+usethis::use_data(agetimes, overwrite = TRUE)

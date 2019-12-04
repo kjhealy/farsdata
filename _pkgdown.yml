@@ -10,7 +10,9 @@ reference:
     desc: >
       Included datasets.
     contents:
-      - crashes
+      - agetimes
+      - persons
+      - vehicles
 navbar:
   right:
    - icon: fa-github

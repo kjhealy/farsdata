@@ -92,7 +92,7 @@ Look at it:
 
 
 ```r
-crashes
+vehicles
 #> # A tibble: 945 x 5
 #>    vehicle_type           year involving    yes    no
 #>    <chr>                 <int> <chr>      <dbl> <dbl>
