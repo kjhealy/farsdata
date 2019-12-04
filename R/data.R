@@ -37,3 +37,23 @@
 #' @name agetimes
 #' @source Fatality Analysis Reporting System (FARS): 2004-2017 Final File and 2018 Annual Report File (ARF)
 'agetimes'
+
+#' Person-level counts of Fatal Automobile Accidents in the United States, 2004-2018, by sex and race of victim
+#'
+#' A tibble containing selected person-level characteristics of automobile crashes that resulted in at least one fatality, 2004-2018
+#'
+#' @format A tibble with 405 rows and 4 columns
+#'
+#' \describe{
+#' \item{\code{sex}}{Sex of victim}
+#' \item{\code{race}}{Race/ethcnicity of victim}
+#' \item{\code{year}}{Year}
+#' \item{\code{n}}{Count}
+#'}
+#'
+#' @docType data
+#' @keywords datasets
+#' @name persons
+#' @source Fatality Analysis Reporting System (FARS): 2004-2017 Final File and 2018 Annual Report File (ARF)
+'persons'
+
