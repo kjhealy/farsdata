@@ -3,3 +3,7 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 ^data-raw$
+^\.travis\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
@@ -9,6 +5,7 @@ output: github_document
 # farsdata
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/kjhealy/farsdata.svg?branch=master)](https://travis-ci.org/kjhealy/farsdata)
 <!-- badges: end -->
 
 The `farsdata` package contains data from the Fatality Analysis Reporting System (FARS) for fatal automobile crashes in the United States.
