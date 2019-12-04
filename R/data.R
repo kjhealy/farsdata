@@ -27,7 +27,8 @@
 #'
 #' \describe{
 #' \item{\code{age}}{Age group of victim}
-#' \item{\code{time}}{Time of day (hour)}
+#' \item{\code{time}}{Time of day (hour). Character variable.}
+#' \item{\code{time_fct}}{Time of day (hour). Ordered factor; 'Unknown Hours' coded as NA.}
 #' \item{\code{year}}{Year}
 #' \item{\code{n}}{Count}
 #'}

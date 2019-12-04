@@ -58,6 +58,10 @@ agetimes <- read_csv("data-raw/fars_raw/times/age_times.csv", skip = 1) %>%
          time = X2) %>%
   group_by(year, age, time) %>%
   arrange(year) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(time_fct = na_if(time, "Unknown Hours"),
+         time_fct = factor(time_fct, levels = unique(agetimes$time), ordered = TRUE),
+         time_fct = droplevels(time_fct)) %>%
+  select(age, time, time_fct, year, n)
 
 usethis::use_data(agetimes, overwrite = TRUE)
