@@ -1,0 +1,19 @@
+#' Counts of Fatal Automobile Accidents in the United States, 2004-2018
+#'
+#' A tibble containing selected summary characteristics of automobile crashes that resulted in at least one fatality, 2004-2018
+#'
+#' @format A tibble with 945 rows and 5 columns
+#'
+#' \describe{
+#' \item{\code{vehicle_type}}{Type of vehicle in crash}
+#' \item{\code{year}}{Year}
+#' \item{\code{involving}}{Crashes that involved the following conditions: "distracted" driver, "drowsy" driver, "older" (65+) driver, "pedestrian", "rollover" of vehicle, "speeding", "younger" (15-24) driver.}
+#' \item{\code{yes}}{Count of crashes where condition in "involving" was present.}
+#' \item{\code{no}}{Count of crashes where condition in "involving" was not present.}
+#'}
+#'
+#' @docType data
+#' @keywords datasets
+#' @name crashes
+#' @source Fatality Analysis Reporting System (FARS): 2004-2017 Final File and 2018 Annual Report File (ARF)
+'crashes'

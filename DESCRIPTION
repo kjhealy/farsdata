@@ -1,0 +1,14 @@
+Package: farsdata
+Title: Vehicle Fatality Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Kieran",
+           family = "Healy",
+           role = c("aut", "cre"),
+           email = "kjhealy@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-9114-981X"))
+Description: Data from the from the Fatality Analysis Reporting System (FARS) for fatal automobile crashes in the United States.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0
