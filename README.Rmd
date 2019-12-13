@@ -23,7 +23,7 @@ The `farsdata` package contains data from the Fatality Analysis Reporting System
 
 ## Installation
 
-`farsdata` is a data package containing a dataset of PBE vaccination exemption rates in California Kindergartens in 2014-15. There are two ways to install it.
+There are two ways to install it.
 
 ### Install direct from GitHub
 
